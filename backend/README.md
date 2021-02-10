@@ -1,4 +1,4 @@
-# clj-api
+# backend
 
 FIXME: description
 
@@ -10,7 +10,7 @@ Download from http://example.com/FIXME.
 
 FIXME: explanation
 
-    $ java -jar clj-api-0.1.0-standalone.jar [args]
+    $ java -jar backend-0.1.0-standalone.jar [args]
 
 ## Options
 

@@ -1,6 +1,6 @@
-(ns clj-api.core-test
+(ns backend.core-test
   (:require [clojure.test :refer :all]
-            [clj-api.core :refer :all]))
+            [backend.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

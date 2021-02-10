@@ -1,3 +1,3 @@
-# Introduction to clj-api
+# Introduction to backend
 
 TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)

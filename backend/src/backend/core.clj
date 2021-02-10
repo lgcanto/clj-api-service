@@ -1,4 +1,4 @@
-(ns clj-api.core
+(ns backend.core
   (:gen-class))
 
 (defn -main
