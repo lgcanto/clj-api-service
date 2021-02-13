@@ -27,6 +27,9 @@
   (GET "/request" [] request-example)
   (route/not-found "Error, page not found!"))
 
+(defn test-function []
+  (* 2 2))
+
 (defn -main
   "This is our main entry point"
   [& args]
