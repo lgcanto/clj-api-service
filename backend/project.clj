@@ -6,16 +6,26 @@
   ;; TODO: Replace versions to the more recent ones
   ;; :dependencies [[org.clojure/clojure "1.10.1"]]
   :dependencies [[org.clojure/clojure "1.10.0"]
-                 ; Compojure - A basic routing library
+                 ;; Compojure - A basic routing library
                  [compojure "1.6.1"]
-                 ; Our Http library for client/server
+                 ;; Our Http library for client/server
                  [http-kit "2.3.0"]
-                 ; Ring defaults - for query params etc
+                 ;; Ring defaults - for query params etc
                  [ring/ring-defaults "0.3.2"]
-                 ; Clojure data.JSON library
-                 [org.clojure/data.json "0.2.6"]]
+                 ;; Clojure data.JSON library
+                 [org.clojure/data.json "0.2.6"]
+                 ;; Static code analysis
+                 [clj-kondo "RELEASE"]]
   :main ^:skip-aot backend.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
                        :jvm-opts ["-Dclojure.compiler.direct-linking=true"]}}
-  :plugins [[lein-cloverage "1.2.2"]])
+  ;; Static code analysis
+  :plugins [[jonase/eastwood "0.3.13"]
+            [lein-kibit "0.1.8"]
+            ;; Detection of outdated dependencies/plugins
+            [lein-ancient "0.6.15"]
+            ;; Test coverage reports
+            [lein-cloverage "1.2.2"]
+            ;; Detection of vulnerable dependencies
+            [lein-nvd "1.4.0"]])
